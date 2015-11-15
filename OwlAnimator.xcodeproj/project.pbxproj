@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		859AF3F81BF8A3B100093B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF3F71BF8A3B100093B55 /* AppDelegate.swift */; };
+		859AF3FA1BF8A3B100093B55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF3F91BF8A3B100093B55 /* ViewController.swift */; };
+		859AF3FD1BF8A3B100093B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859AF3FB1BF8A3B100093B55 /* Main.storyboard */; };
+		859AF3FF1BF8A3B100093B55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 859AF3FE1BF8A3B100093B55 /* Assets.xcassets */; };
+		859AF4021BF8A3B100093B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */; };
+		859AF40D1BF8A3B100093B55 /* OwlAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF40C1BF8A3B100093B55 /* OwlAnimatorTests.swift */; };
+		859AF4181BF8A3B100093B55 /* OwlAnimatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF4171BF8A3B100093B55 /* OwlAnimatorUITests.swift */; };
+		859AF4261BF8A45200093B55 /* owl.png in Resources */ = {isa = PBXBuildFile; fileRef = 859AF4251BF8A45200093B55 /* owl.png */; };
+		859AF4281BF8A64300093B55 /* BigOwlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF4271BF8A64300093B55 /* BigOwlController.swift */; };
+		859AF42A1BF8AB7F00093B55 /* branch.png in Resources */ = {isa = PBXBuildFile; fileRef = 859AF4291BF8AB7F00093B55 /* branch.png */; };
+		859AF42C1BF8AD3900093B55 /* owl_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		859AF4091BF8A3B100093B55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859AF3EC1BF8A3B100093B55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 859AF3F31BF8A3B100093B55;
+			remoteInfo = OwlAnimator;
+		};
+		859AF4141BF8A3B100093B55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 859AF3EC1BF8A3B100093B55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 859AF3F31BF8A3B100093B55;
+			remoteInfo = OwlAnimator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		859AF3F41BF8A3B100093B55 /* OwlAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		859AF3F71BF8A3B100093B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		859AF3F91BF8A3B100093B55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		859AF3FC1BF8A3B100093B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		859AF3FE1BF8A3B100093B55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		859AF4011BF8A3B100093B55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		859AF4031BF8A3B100093B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		859AF4081BF8A3B100093B55 /* OwlAnimatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlAnimatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		859AF40C1BF8A3B100093B55 /* OwlAnimatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlAnimatorTests.swift; sourceTree = "<group>"; };
+		859AF40E1BF8A3B100093B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		859AF4131BF8A3B100093B55 /* OwlAnimatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlAnimatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		859AF4171BF8A3B100093B55 /* OwlAnimatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlAnimatorUITests.swift; sourceTree = "<group>"; };
+		859AF4191BF8A3B100093B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		859AF4251BF8A45200093B55 /* owl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owl.png; sourceTree = "<group>"; };
+		859AF4271BF8A64300093B55 /* BigOwlController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigOwlController.swift; sourceTree = "<group>"; };
+		859AF4291BF8AB7F00093B55 /* branch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = branch.png; sourceTree = "<group>"; };
+		859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = owl_sound.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		859AF3F11BF8A3B100093B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		859AF4051BF8A3B100093B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		859AF4101BF8A3B100093B55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		859AF3EB1BF8A3B100093B55 = {
+			isa = PBXGroup;
+			children = (
+				859AF3F61BF8A3B100093B55 /* OwlAnimator */,
+				859AF40B1BF8A3B100093B55 /* OwlAnimatorTests */,
+				859AF4161BF8A3B100093B55 /* OwlAnimatorUITests */,
+				859AF3F51BF8A3B100093B55 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		859AF3F51BF8A3B100093B55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				859AF3F41BF8A3B100093B55 /* OwlAnimator.app */,
+				859AF4081BF8A3B100093B55 /* OwlAnimatorTests.xctest */,
+				859AF4131BF8A3B100093B55 /* OwlAnimatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		859AF3F61BF8A3B100093B55 /* OwlAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */,
+				859AF4291BF8AB7F00093B55 /* branch.png */,
+				859AF4251BF8A45200093B55 /* owl.png */,
+				859AF3F71BF8A3B100093B55 /* AppDelegate.swift */,
+				859AF4271BF8A64300093B55 /* BigOwlController.swift */,
+				859AF3F91BF8A3B100093B55 /* ViewController.swift */,
+				859AF3FB1BF8A3B100093B55 /* Main.storyboard */,
+				859AF3FE1BF8A3B100093B55 /* Assets.xcassets */,
+				859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */,
+				859AF4031BF8A3B100093B55 /* Info.plist */,
+			);
+			path = OwlAnimator;
+			sourceTree = "<group>";
+		};
+		859AF40B1BF8A3B100093B55 /* OwlAnimatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				859AF40C1BF8A3B100093B55 /* OwlAnimatorTests.swift */,
+				859AF40E1BF8A3B100093B55 /* Info.plist */,
+			);
+			path = OwlAnimatorTests;
+			sourceTree = "<group>";
+		};
+		859AF4161BF8A3B100093B55 /* OwlAnimatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				859AF4171BF8A3B100093B55 /* OwlAnimatorUITests.swift */,
+				859AF4191BF8A3B100093B55 /* Info.plist */,
+			);
+			path = OwlAnimatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		859AF3F31BF8A3B100093B55 /* OwlAnimator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 859AF41C1BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimator" */;
+			buildPhases = (
+				859AF3F01BF8A3B100093B55 /* Sources */,
+				859AF3F11BF8A3B100093B55 /* Frameworks */,
+				859AF3F21BF8A3B100093B55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OwlAnimator;
+			productName = OwlAnimator;
+			productReference = 859AF3F41BF8A3B100093B55 /* OwlAnimator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		859AF4071BF8A3B100093B55 /* OwlAnimatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 859AF41F1BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimatorTests" */;
+			buildPhases = (
+				859AF4041BF8A3B100093B55 /* Sources */,
+				859AF4051BF8A3B100093B55 /* Frameworks */,
+				859AF4061BF8A3B100093B55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				859AF40A1BF8A3B100093B55 /* PBXTargetDependency */,
+			);
+			name = OwlAnimatorTests;
+			productName = OwlAnimatorTests;
+			productReference = 859AF4081BF8A3B100093B55 /* OwlAnimatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		859AF4121BF8A3B100093B55 /* OwlAnimatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 859AF4221BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimatorUITests" */;
+			buildPhases = (
+				859AF40F1BF8A3B100093B55 /* Sources */,
+				859AF4101BF8A3B100093B55 /* Frameworks */,
+				859AF4111BF8A3B100093B55 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				859AF4151BF8A3B100093B55 /* PBXTargetDependency */,
+			);
+			name = OwlAnimatorUITests;
+			productName = OwlAnimatorUITests;
+			productReference = 859AF4131BF8A3B100093B55 /* OwlAnimatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		859AF3EC1BF8A3B100093B55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Nuno Gonçalves";
+				TargetAttributes = {
+					859AF3F31BF8A3B100093B55 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					859AF4071BF8A3B100093B55 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 859AF3F31BF8A3B100093B55;
+					};
+					859AF4121BF8A3B100093B55 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 859AF3F31BF8A3B100093B55;
+					};
+				};
+			};
+			buildConfigurationList = 859AF3EF1BF8A3B100093B55 /* Build configuration list for PBXProject "OwlAnimator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 859AF3EB1BF8A3B100093B55;
+			productRefGroup = 859AF3F51BF8A3B100093B55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				859AF3F31BF8A3B100093B55 /* OwlAnimator */,
+				859AF4071BF8A3B100093B55 /* OwlAnimatorTests */,
+				859AF4121BF8A3B100093B55 /* OwlAnimatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		859AF3F21BF8A3B100093B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859AF4261BF8A45200093B55 /* owl.png in Resources */,
+				859AF42C1BF8AD3900093B55 /* owl_sound.mp3 in Resources */,
+				859AF42A1BF8AB7F00093B55 /* branch.png in Resources */,
+				859AF4021BF8A3B100093B55 /* LaunchScreen.storyboard in Resources */,
+				859AF3FF1BF8A3B100093B55 /* Assets.xcassets in Resources */,
+				859AF3FD1BF8A3B100093B55 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		859AF4061BF8A3B100093B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		859AF4111BF8A3B100093B55 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		859AF3F01BF8A3B100093B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859AF4281BF8A64300093B55 /* BigOwlController.swift in Sources */,
+				859AF3FA1BF8A3B100093B55 /* ViewController.swift in Sources */,
+				859AF3F81BF8A3B100093B55 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		859AF4041BF8A3B100093B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859AF40D1BF8A3B100093B55 /* OwlAnimatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		859AF40F1BF8A3B100093B55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				859AF4181BF8A3B100093B55 /* OwlAnimatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		859AF40A1BF8A3B100093B55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 859AF3F31BF8A3B100093B55 /* OwlAnimator */;
+			targetProxy = 859AF4091BF8A3B100093B55 /* PBXContainerItemProxy */;
+		};
+		859AF4151BF8A3B100093B55 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 859AF3F31BF8A3B100093B55 /* OwlAnimator */;
+			targetProxy = 859AF4141BF8A3B100093B55 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		859AF3FB1BF8A3B100093B55 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				859AF3FC1BF8A3B100093B55 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				859AF4011BF8A3B100093B55 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		859AF41A1BF8A3B100093B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		859AF41B1BF8A3B100093B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		859AF41D1BF8A3B100093B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OwlAnimator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.numicago.ios.OwlAnimator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		859AF41E1BF8A3B100093B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OwlAnimator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.numicago.ios.OwlAnimator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		859AF4201BF8A3B100093B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OwlAnimatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.numicago.ios.OwlAnimatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OwlAnimator.app/OwlAnimator";
+			};
+			name = Debug;
+		};
+		859AF4211BF8A3B100093B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OwlAnimatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.numicago.ios.OwlAnimatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OwlAnimator.app/OwlAnimator";
+			};
+			name = Release;
+		};
+		859AF4231BF8A3B100093B55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OwlAnimatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.numicago.ios.OwlAnimatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OwlAnimator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		859AF4241BF8A3B100093B55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OwlAnimatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.numicago.ios.OwlAnimatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OwlAnimator;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		859AF3EF1BF8A3B100093B55 /* Build configuration list for PBXProject "OwlAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				859AF41A1BF8A3B100093B55 /* Debug */,
+				859AF41B1BF8A3B100093B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		859AF41C1BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				859AF41D1BF8A3B100093B55 /* Debug */,
+				859AF41E1BF8A3B100093B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		859AF41F1BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				859AF4201BF8A3B100093B55 /* Debug */,
+				859AF4211BF8A3B100093B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		859AF4221BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				859AF4231BF8A3B100093B55 /* Debug */,
+				859AF4241BF8A3B100093B55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 859AF3EC1BF8A3B100093B55 /* Project object */;
+}

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PsQ-nj-b3N">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OwlAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vQ-jT-wZj">
+                                <rect key="frame" x="200" y="360" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="BLc-ZK-s40"/>
+                                    <constraint firstAttribute="height" constant="100" id="i5r-xH-5rN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="layer.shadowOffset">
+                                        <size key="value" width="1" height="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowOpacity">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.shadowRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl.png" translatesAutoresizingMaskIntoConstraints="NO" id="zcv-Mj-ijw">
+                                <rect key="frame" x="220" y="380" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="IVH-e3-Ecs"/>
+                                    <constraint firstAttribute="height" constant="60" id="lkf-KI-hJu"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Owl Animator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U6-Ns-hhc">
+                                <rect key="frame" x="108.5" y="40" width="103" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1U6-Ns-hhc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5uQ-XT-d05"/>
+                            <constraint firstItem="zcv-Mj-ijw" firstAttribute="centerY" secondItem="4vQ-jT-wZj" secondAttribute="centerY" id="Gc6-QS-JC5"/>
+                            <constraint firstItem="zcv-Mj-ijw" firstAttribute="centerX" secondItem="4vQ-jT-wZj" secondAttribute="centerX" id="YJ5-Qf-Srq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4vQ-jT-wZj" secondAttribute="bottom" constant="20" id="aY6-vw-T5V"/>
+                            <constraint firstAttribute="trailing" secondItem="4vQ-jT-wZj" secondAttribute="trailing" constant="20" id="clE-p3-hWu"/>
+                            <constraint firstItem="1U6-Ns-hhc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wUO-gY-vA3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="zEe-hY-Lty"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="owlContainer" destination="4vQ-jT-wZj" id="Xyv-5X-jXb"/>
+                        <outlet property="owlImage" destination="zcv-Mj-ijw" id="Dym-FV-EhU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="255"/>
+        </scene>
+        <!--Big Owl Controller-->
+        <scene sceneID="JP8-y9-34c">
+            <objects>
+                <viewController storyboardIdentifier="BigOwlController" id="5Ev-wb-Dv7" customClass="BigOwlController" customModule="OwlAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pgB-tr-GON"/>
+                        <viewControllerLayoutGuide type="bottom" id="tgU-cq-rfb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x8T-5m-4BC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZqJ-5F-yY0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="8DS-G2-Kb5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="66" id="Eju-Cs-FBN"/>
+                                    <constraint firstAttribute="height" constant="44" id="ehc-Oa-sO6"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Big Owl" id="YwG-jd-Kdb"/>
+                                </items>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Eju-Cs-FBN"/>
+                                        <exclude reference="ehc-Oa-sO6"/>
+                                    </mask>
+                                </variation>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="branch.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Fq-fq-Fmq">
+                                <rect key="frame" x="-10" y="295" width="350" height="136"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl.png" translatesAutoresizingMaskIntoConstraints="NO" id="vqV-BQ-PZA">
+                                <rect key="frame" x="60" y="140" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5MO-gL-E0p"/>
+                                    <constraint firstAttribute="height" constant="200" id="vWQ-AP-Feb"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Big Owl" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0Z-vd-bgp">
+                                <rect key="frame" x="125" y="66" width="69" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Um0-C6-lZz">
+                                <rect key="frame" x="270" y="64" width="30" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <state key="normal" title="x">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeClicked" destination="5Ev-wb-Dv7" eventType="touchUpInside" id="icq-wD-1TH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="vqV-BQ-PZA" firstAttribute="centerY" secondItem="x8T-5m-4BC" secondAttribute="centerY" id="2px-MP-gJg"/>
+                            <constraint firstItem="Um0-C6-lZz" firstAttribute="top" secondItem="pgB-tr-GON" secondAttribute="bottom" id="3SH-U4-chy"/>
+                            <constraint firstItem="vqV-BQ-PZA" firstAttribute="bottom" secondItem="0Fq-fq-Fmq" secondAttribute="top" constant="45" id="5ND-ev-EE8"/>
+                            <constraint firstItem="ZqJ-5F-yY0" firstAttribute="top" secondItem="x8T-5m-4BC" secondAttribute="top" id="DeZ-tR-SbI"/>
+                            <constraint firstItem="B0Z-vd-bgp" firstAttribute="centerX" secondItem="x8T-5m-4BC" secondAttribute="centerX" id="Eoy-RC-Ddu"/>
+                            <constraint firstItem="Um0-C6-lZz" firstAttribute="top" secondItem="ZqJ-5F-yY0" secondAttribute="bottom" constant="-20" id="GYk-s1-ZC3"/>
+                            <constraint firstAttribute="trailing" secondItem="Um0-C6-lZz" secondAttribute="trailing" constant="20" id="Lfs-ia-EHZ"/>
+                            <constraint firstAttribute="trailing" secondItem="0Fq-fq-Fmq" secondAttribute="trailing" constant="-20" id="R9b-51-Z37"/>
+                            <constraint firstItem="ZqJ-5F-yY0" firstAttribute="leading" secondItem="x8T-5m-4BC" secondAttribute="leading" id="b1f-8b-uWZ"/>
+                            <constraint firstItem="0Fq-fq-Fmq" firstAttribute="leading" secondItem="x8T-5m-4BC" secondAttribute="leading" constant="-10" id="chh-PJ-FgE"/>
+                            <constraint firstItem="B0Z-vd-bgp" firstAttribute="top" secondItem="pgB-tr-GON" secondAttribute="bottom" constant="20" id="dSs-u4-309"/>
+                            <constraint firstAttribute="trailing" secondItem="ZqJ-5F-yY0" secondAttribute="trailing" id="i3L-g2-Fn9"/>
+                            <constraint firstItem="ZqJ-5F-yY0" firstAttribute="centerX" secondItem="B0Z-vd-bgp" secondAttribute="centerX" id="lS0-HQ-u0V"/>
+                            <constraint firstItem="ZqJ-5F-yY0" firstAttribute="bottom" secondItem="Um0-C6-lZz" secondAttribute="top" id="oDS-EL-34C"/>
+                            <constraint firstItem="ZqJ-5F-yY0" firstAttribute="leading" secondItem="x8T-5m-4BC" secondAttribute="leading" id="prq-fy-bs4"/>
+                            <constraint firstItem="ZqJ-5F-yY0" firstAttribute="centerX" secondItem="x8T-5m-4BC" secondAttribute="centerX" id="puz-ak-fSp"/>
+                            <constraint firstItem="vqV-BQ-PZA" firstAttribute="top" secondItem="B0Z-vd-bgp" secondAttribute="bottom" constant="50" id="rdj-ji-I6Q"/>
+                            <constraint firstItem="vqV-BQ-PZA" firstAttribute="centerX" secondItem="x8T-5m-4BC" secondAttribute="centerX" id="y7r-2w-Gc7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="b1f-8b-uWZ"/>
+                                <exclude reference="lS0-HQ-u0V"/>
+                                <exclude reference="puz-ak-fSp"/>
+                                <exclude reference="dSs-u4-309"/>
+                                <exclude reference="3SH-U4-chy"/>
+                                <exclude reference="GYk-s1-ZC3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="bigOwlImage" destination="vqV-BQ-PZA" id="aSI-ni-SOy"/>
+                        <outlet property="branchTopConstraint" destination="5ND-ev-EE8" id="d4d-hZ-eEU"/>
+                        <outlet property="horizontalConstraint" destination="Eoy-RC-Ddu" id="VLp-mI-MQg"/>
+                        <outlet property="label" destination="B0Z-vd-bgp" id="UZ1-Mc-fD2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F1R-yo-sWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1424" y="255"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="G3a-Jf-b0P">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PsQ-nj-b3N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eN0-ji-xLT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ufm-bs-nLh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igc-76-l9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="675" y="255"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="branch.png" width="600" height="136"/>
+        <image name="owl.png" width="300" height="293"/>
+    </resources>
+</document>
