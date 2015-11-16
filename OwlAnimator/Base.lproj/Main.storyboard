@@ -19,10 +19,22 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4vQ-jT-wZj">
                                 <rect key="frame" x="200" y="360" width="100" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tq7-vy-jdm">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <connections>
+                                            <segue destination="5Ev-wb-Dv7" kind="show" id="63i-gO-ZOO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="BLc-ZK-s40"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tq7-vy-jdm" secondAttribute="trailing" id="H6C-B0-hAW"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tq7-vy-jdm" secondAttribute="bottom" id="Jaz-gN-nEj"/>
+                                    <constraint firstItem="Tq7-vy-jdm" firstAttribute="top" secondItem="4vQ-jT-wZj" secondAttribute="top" id="dt9-XA-njp"/>
                                     <constraint firstAttribute="height" constant="100" id="i5r-xH-5rN"/>
+                                    <constraint firstItem="Tq7-vy-jdm" firstAttribute="leading" secondItem="4vQ-jT-wZj" secondAttribute="leading" id="wdm-rZ-owg"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -47,13 +59,17 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Owl Animator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1U6-Ns-hhc">
-                                <rect key="frame" x="108.5" y="40" width="103" height="20.5"/>
+                                <rect key="frame" x="108" y="40" width="103" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cR4-Sc-mNu">
+                                <rect key="frame" x="20" y="80" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="1U6-Ns-hhc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5uQ-XT-d05"/>
                             <constraint firstItem="zcv-Mj-ijw" firstAttribute="centerY" secondItem="4vQ-jT-wZj" secondAttribute="centerY" id="Gc6-QS-JC5"/>
@@ -72,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="255"/>
+            <point key="canvasLocation" x="1041" y="255"/>
         </scene>
         <!--Big Owl Controller-->
         <scene sceneID="JP8-y9-34c">
@@ -172,7 +188,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F1R-yo-sWn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1424" y="255"/>
+            <point key="canvasLocation" x="1423" y="255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="G3a-Jf-b0P">
@@ -186,12 +202,14 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
+                        <outlet property="delegate" destination="vse-iZ-KNi" id="3L3-xn-YWv"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ufm-bs-nLh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igc-76-l9Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="vse-iZ-KNi" customClass="NavigationControllerDelegate" customModule="OwlAnimator" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="675" y="255"/>
+            <point key="canvasLocation" x="664" y="255"/>
         </scene>
     </scenes>
     <resources>

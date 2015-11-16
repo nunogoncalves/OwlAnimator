@@ -27,16 +27,15 @@ class ViewController: UIViewController, FinishedProtocol {
         view.layoutIfNeeded()
         
         addCartPath()
-        addTapToOwl()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        addTapToOwl()
+    }
     private func addCartPath() {
         owlPath.moveToPoint(owlContainer.center)
-        owlPath.addQuadCurveToPoint(view.center, controlPoint: P(owlContainer.center.x - 150, owlContainer.center.y))
+        owlPath.addQuadCurveToPoint(view.center, controlPoint: P(view.frame.width / 2, owlContainer.center.y))
 
-//        pathLayer.strokeColor = UIColor.blueColor().CGColor
-//        pathLayer.lineWidth = 1
-//        pathLayer.borderWidth = 1.0
         pathLayer.borderColor = UIColor.blueColor().CGColor
         pathLayer.fillColor = UIColor.clearColor().CGColor
         
@@ -50,53 +49,54 @@ class ViewController: UIViewController, FinishedProtocol {
     }
     
     func owlClicked() {
-        moveOwl(owlPath, onFinished: {
-            let center = self.view.center
-            self.owlImage.frame = CGRectMake(center.x, center.y, self.owlImage.frame.width, self.owlImage.frame.height)
-            self.view.layoutIfNeeded()
-            self.expandOwl()
-        })
+        performSegueWithIdentifier("BigOwlSegue", sender: self)
+//        moveOwl(owlPath, onFinished: {
+//            let center = self.view.center
+//            self.owlImage.frame = CGRectMake(center.x, center.y, self.owlImage.frame.width, self.owlImage.frame.height)
+//            self.view.layoutIfNeeded()
+//            self.expandOwl()
+//        })
     }
     
-    private func moveOwl(path: UIBezierPath, onFinished: () -> ()) {
-        let anim = CAKeyframeAnimation(keyPath: "position")
-        anim.rotationMode = kCAAnimationPaced
-        anim.fillMode = kCAFillModeForwards
-        anim.removedOnCompletion = false
-        anim.duration = 0.5
-        
-        anim.path = path.CGPath
-        
-        CATransaction.begin()
-        CATransaction.setCompletionBlock {
-            onFinished()
-        }
-        owlContainer.layer.addAnimation(anim, forKey: "circle")
-        owlImage.layer.addAnimation(anim, forKey: "circle")
-        CATransaction.commit()
-    }
+//    private func moveOwl(path: UIBezierPath, onFinished: () -> ()) {
+//        let anim = CAKeyframeAnimation(keyPath: "position")
+//        anim.rotationMode = kCAAnimationPaced
+//        anim.fillMode = kCAFillModeForwards
+//        anim.removedOnCompletion = false
+//        anim.duration = 0.5
+//        
+//        anim.path = path.CGPath
+//        
+//        CATransaction.begin()
+//        CATransaction.setCompletionBlock {
+//            onFinished()
+//        }
+//        owlContainer.layer.addAnimation(anim, forKey: "circle")
+//        owlImage.layer.addAnimation(anim, forKey: "circle")
+//        CATransaction.commit()
+//    }
     
-    private func expandOwl() {
-        UIView.animateWithDuration(0.5, animations: {
-            self.owlContainer.transform = CGAffineTransformMakeScale(10, 10)
-            self.owlImage.transform = CGAffineTransformMakeScale(3.334, 3.334)
-            }) { _ in
-                let nextVC = self.storyboard?.instantiateViewControllerWithIdentifier("BigOwlController") as! BigOwlController
-                nextVC.finshedDelegate = self
-                self.presentViewController(nextVC, animated: false, completion: nil)
-        }
-    }
+//    private func expandOwl() {
+//        UIView.animateWithDuration(0.5, animations: {
+//            self.owlContainer.transform = CGAffineTransformMakeScale(10, 10)
+//            self.owlImage.transform = CGAffineTransformMakeScale(3.334, 3.334)
+//            }) { _ in
+//                let nextVC = self.storyboard?.instantiateViewControllerWithIdentifier("BigOwlController") as! BigOwlController
+//                nextVC.finshedDelegate = self
+//                self.presentViewController(nextVC, animated: false, completion: nil)
+//        }
+//    }
     
     func viewWillReappear() {
-        UIView.animateWithDuration(1.0, animations: {
-            self.owlContainer.transform = CGAffineTransformMakeScale(1, 1)
-            self.owlImage.transform = CGAffineTransformMakeScale(1, 1)
-            }) { _ in
-                let reversePath = self.owlPath.bezierPathByReversingPath()
-                self.moveOwl(reversePath) {
-                    
-                }
-        }
+//        UIView.animateWithDuration(1.0, animations: {
+//            self.owlContainer.transform = CGAffineTransformMakeScale(1, 1)
+//            self.owlImage.transform = CGAffineTransformMakeScale(1, 1)
+//            }) { _ in
+//                let reversePath = self.owlPath.bezierPathByReversingPath()
+//                self.moveOwl(reversePath) {
+//                    
+//                }
+//        }
     }
     
 }

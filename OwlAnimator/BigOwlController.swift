@@ -18,9 +18,15 @@ class BigOwlController: UIViewController {
     @IBOutlet weak var branchTopConstraint: NSLayoutConstraint!
     
     @IBAction func closeClicked() {
-        dismissViewControllerAnimated(false, completion: { _ in
-            self.finshedDelegate?.viewWillReappear()
-        })
+        view.backgroundColor = UIColor.whiteColor()
+        navigationController?.popViewControllerAnimated(true)
+//        dismissViewControllerAnimated(false, completion: { _ in
+//            self.finshedDelegate?.viewWillReappear()
+//        })
+    }
+    
+    deinit {
+        print("Deiniting big owl")
     }
     
     var owlSound: AVAudioPlayer?

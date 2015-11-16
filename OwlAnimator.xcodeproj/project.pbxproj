@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		854729FB1BF9034B00374A51 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854729FA1BF9034B00374A51 /* NavigationControllerDelegate.swift */; };
+		854729FD1BF905AA00374A51 /* OwlFirstTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854729FC1BF905AA00374A51 /* OwlFirstTransitionAnimator.swift */; };
+		854729FF1BF90BD900374A51 /* OwlSecondTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854729FE1BF90BD800374A51 /* OwlSecondTransitionAnimator.swift */; };
 		859AF3F81BF8A3B100093B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF3F71BF8A3B100093B55 /* AppDelegate.swift */; };
 		859AF3FA1BF8A3B100093B55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF3F91BF8A3B100093B55 /* ViewController.swift */; };
 		859AF3FD1BF8A3B100093B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859AF3FB1BF8A3B100093B55 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		854729FA1BF9034B00374A51 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		854729FC1BF905AA00374A51 /* OwlFirstTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwlFirstTransitionAnimator.swift; sourceTree = "<group>"; };
+		854729FE1BF90BD800374A51 /* OwlSecondTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwlSecondTransitionAnimator.swift; sourceTree = "<group>"; };
 		859AF3F41BF8A3B100093B55 /* OwlAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859AF3F71BF8A3B100093B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859AF3F91BF8A3B100093B55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +121,9 @@
 				859AF3FE1BF8A3B100093B55 /* Assets.xcassets */,
 				859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */,
 				859AF4031BF8A3B100093B55 /* Info.plist */,
+				854729FA1BF9034B00374A51 /* NavigationControllerDelegate.swift */,
+				854729FC1BF905AA00374A51 /* OwlFirstTransitionAnimator.swift */,
+				854729FE1BF90BD800374A51 /* OwlSecondTransitionAnimator.swift */,
 			);
 			path = OwlAnimator;
 			sourceTree = "<group>";
@@ -271,8 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854729FB1BF9034B00374A51 /* NavigationControllerDelegate.swift in Sources */,
+				854729FD1BF905AA00374A51 /* OwlFirstTransitionAnimator.swift in Sources */,
 				859AF4281BF8A64300093B55 /* BigOwlController.swift in Sources */,
 				859AF3FA1BF8A3B100093B55 /* ViewController.swift in Sources */,
+				854729FF1BF90BD900374A51 /* OwlSecondTransitionAnimator.swift in Sources */,
 				859AF3F81BF8A3B100093B55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,6 +510,7 @@
 				859AF41E1BF8A3B100093B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859AF41F1BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimatorTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +519,7 @@
 				859AF4211BF8A3B100093B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859AF4221BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +528,7 @@
 				859AF4241BF8A3B100093B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
