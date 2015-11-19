@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850777821BFE230A00087983 /* CircularAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850777811BFE230A00087983 /* CircularAnimationController.swift */; };
 		859AF3F81BF8A3B100093B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF3F71BF8A3B100093B55 /* AppDelegate.swift */; };
 		859AF3FA1BF8A3B100093B55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF3F91BF8A3B100093B55 /* ViewController.swift */; };
 		859AF3FD1BF8A3B100093B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859AF3FB1BF8A3B100093B55 /* Main.storyboard */; };
@@ -14,10 +15,22 @@
 		859AF4021BF8A3B100093B55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */; };
 		859AF40D1BF8A3B100093B55 /* OwlAnimatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF40C1BF8A3B100093B55 /* OwlAnimatorTests.swift */; };
 		859AF4181BF8A3B100093B55 /* OwlAnimatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF4171BF8A3B100093B55 /* OwlAnimatorUITests.swift */; };
-		859AF4261BF8A45200093B55 /* owl.png in Resources */ = {isa = PBXBuildFile; fileRef = 859AF4251BF8A45200093B55 /* owl.png */; };
+		859AF4261BF8A45200093B55 /* Owl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 859AF4251BF8A45200093B55 /* Owl1.png */; };
 		859AF4281BF8A64300093B55 /* BigOwlController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 859AF4271BF8A64300093B55 /* BigOwlController.swift */; };
 		859AF42A1BF8AB7F00093B55 /* branch.png in Resources */ = {isa = PBXBuildFile; fileRef = 859AF4291BF8AB7F00093B55 /* branch.png */; };
 		859AF42C1BF8AD3900093B55 /* owl_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */; };
+		85E5B04B1BFB3088009955DA /* Owl6.png in Resources */ = {isa = PBXBuildFile; fileRef = 85E5B0491BFB3088009955DA /* Owl6.png */; };
+		85E5B04C1BFB3088009955DA /* Owl12.png in Resources */ = {isa = PBXBuildFile; fileRef = 85E5B04A1BFB3088009955DA /* Owl12.png */; };
+		85EAEE0E1BF9D1B700723DED /* Owl11.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE041BF9D1B700723DED /* Owl11.png */; };
+		85EAEE0F1BF9D1B700723DED /* Owl2.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE051BF9D1B700723DED /* Owl2.png */; };
+		85EAEE101BF9D1B700723DED /* Owl3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE061BF9D1B700723DED /* Owl3.jpeg */; };
+		85EAEE111BF9D1B700723DED /* Owl4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE071BF9D1B700723DED /* Owl4.jpg */; };
+		85EAEE121BF9D1B700723DED /* Owl5.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE081BF9D1B700723DED /* Owl5.png */; };
+		85EAEE141BF9D1B700723DED /* Owl7.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE0A1BF9D1B700723DED /* Owl7.png */; };
+		85EAEE151BF9D1B700723DED /* Owl8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE0B1BF9D1B700723DED /* Owl8.jpg */; };
+		85EAEE161BF9D1B700723DED /* Owl9.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE0C1BF9D1B700723DED /* Owl9.png */; };
+		85EAEE171BF9D1B700723DED /* Owl10.png in Resources */ = {isa = PBXBuildFile; fileRef = 85EAEE0D1BF9D1B700723DED /* Owl10.png */; };
+		85EAEE1A1BF9D24100723DED /* OwlsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EAEE191BF9D24100723DED /* OwlsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		850777811BFE230A00087983 /* CircularAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularAnimationController.swift; sourceTree = "<group>"; };
 		859AF3F41BF8A3B100093B55 /* OwlAnimator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OwlAnimator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		859AF3F71BF8A3B100093B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		859AF3F91BF8A3B100093B55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,10 +65,22 @@
 		859AF4131BF8A3B100093B55 /* OwlAnimatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OwlAnimatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		859AF4171BF8A3B100093B55 /* OwlAnimatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwlAnimatorUITests.swift; sourceTree = "<group>"; };
 		859AF4191BF8A3B100093B55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859AF4251BF8A45200093B55 /* owl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = owl.png; sourceTree = "<group>"; };
+		859AF4251BF8A45200093B55 /* Owl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl1.png; sourceTree = "<group>"; };
 		859AF4271BF8A64300093B55 /* BigOwlController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigOwlController.swift; sourceTree = "<group>"; };
 		859AF4291BF8AB7F00093B55 /* branch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = branch.png; sourceTree = "<group>"; };
 		859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = owl_sound.mp3; sourceTree = "<group>"; };
+		85E5B0491BFB3088009955DA /* Owl6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl6.png; sourceTree = "<group>"; };
+		85E5B04A1BFB3088009955DA /* Owl12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl12.png; sourceTree = "<group>"; };
+		85EAEE041BF9D1B700723DED /* Owl11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl11.png; sourceTree = "<group>"; };
+		85EAEE051BF9D1B700723DED /* Owl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl2.png; sourceTree = "<group>"; };
+		85EAEE061BF9D1B700723DED /* Owl3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Owl3.jpeg; sourceTree = "<group>"; };
+		85EAEE071BF9D1B700723DED /* Owl4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Owl4.jpg; sourceTree = "<group>"; };
+		85EAEE081BF9D1B700723DED /* Owl5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl5.png; sourceTree = "<group>"; };
+		85EAEE0A1BF9D1B700723DED /* Owl7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl7.png; sourceTree = "<group>"; };
+		85EAEE0B1BF9D1B700723DED /* Owl8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Owl8.jpg; sourceTree = "<group>"; };
+		85EAEE0C1BF9D1B700723DED /* Owl9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl9.png; sourceTree = "<group>"; };
+		85EAEE0D1BF9D1B700723DED /* Owl10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Owl10.png; sourceTree = "<group>"; };
+		85EAEE191BF9D24100723DED /* OwlsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwlsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,16 +131,18 @@
 		859AF3F61BF8A3B100093B55 /* OwlAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				85EAEE181BF9D1C200723DED /* OwlImages */,
 				859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */,
 				859AF4291BF8AB7F00093B55 /* branch.png */,
-				859AF4251BF8A45200093B55 /* owl.png */,
 				859AF3F71BF8A3B100093B55 /* AppDelegate.swift */,
 				859AF4271BF8A64300093B55 /* BigOwlController.swift */,
+				85EAEE191BF9D24100723DED /* OwlsController.swift */,
 				859AF3F91BF8A3B100093B55 /* ViewController.swift */,
 				859AF3FB1BF8A3B100093B55 /* Main.storyboard */,
 				859AF3FE1BF8A3B100093B55 /* Assets.xcassets */,
 				859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */,
 				859AF4031BF8A3B100093B55 /* Info.plist */,
+				850777811BFE230A00087983 /* CircularAnimationController.swift */,
 			);
 			path = OwlAnimator;
 			sourceTree = "<group>";
@@ -135,6 +163,25 @@
 				859AF4191BF8A3B100093B55 /* Info.plist */,
 			);
 			path = OwlAnimatorUITests;
+			sourceTree = "<group>";
+		};
+		85EAEE181BF9D1C200723DED /* OwlImages */ = {
+			isa = PBXGroup;
+			children = (
+				85E5B0491BFB3088009955DA /* Owl6.png */,
+				85E5B04A1BFB3088009955DA /* Owl12.png */,
+				85EAEE041BF9D1B700723DED /* Owl11.png */,
+				85EAEE051BF9D1B700723DED /* Owl2.png */,
+				85EAEE061BF9D1B700723DED /* Owl3.jpeg */,
+				85EAEE071BF9D1B700723DED /* Owl4.jpg */,
+				85EAEE081BF9D1B700723DED /* Owl5.png */,
+				85EAEE0A1BF9D1B700723DED /* Owl7.png */,
+				85EAEE0B1BF9D1B700723DED /* Owl8.jpg */,
+				85EAEE0C1BF9D1B700723DED /* Owl9.png */,
+				85EAEE0D1BF9D1B700723DED /* Owl10.png */,
+				859AF4251BF8A45200093B55 /* Owl1.png */,
+			);
+			name = OwlImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,12 +288,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859AF4261BF8A45200093B55 /* owl.png in Resources */,
+				859AF4261BF8A45200093B55 /* Owl1.png in Resources */,
 				859AF42C1BF8AD3900093B55 /* owl_sound.mp3 in Resources */,
 				859AF42A1BF8AB7F00093B55 /* branch.png in Resources */,
+				85E5B04B1BFB3088009955DA /* Owl6.png in Resources */,
+				85E5B04C1BFB3088009955DA /* Owl12.png in Resources */,
 				859AF4021BF8A3B100093B55 /* LaunchScreen.storyboard in Resources */,
+				85EAEE0E1BF9D1B700723DED /* Owl11.png in Resources */,
+				85EAEE101BF9D1B700723DED /* Owl3.jpeg in Resources */,
 				859AF3FF1BF8A3B100093B55 /* Assets.xcassets in Resources */,
+				85EAEE111BF9D1B700723DED /* Owl4.jpg in Resources */,
 				859AF3FD1BF8A3B100093B55 /* Main.storyboard in Resources */,
+				85EAEE141BF9D1B700723DED /* Owl7.png in Resources */,
+				85EAEE151BF9D1B700723DED /* Owl8.jpg in Resources */,
+				85EAEE161BF9D1B700723DED /* Owl9.png in Resources */,
+				85EAEE121BF9D1B700723DED /* Owl5.png in Resources */,
+				85EAEE0F1BF9D1B700723DED /* Owl2.png in Resources */,
+				85EAEE171BF9D1B700723DED /* Owl10.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EAEE1A1BF9D24100723DED /* OwlsController.swift in Sources */,
 				859AF4281BF8A64300093B55 /* BigOwlController.swift in Sources */,
+				850777821BFE230A00087983 /* CircularAnimationController.swift in Sources */,
 				859AF3FA1BF8A3B100093B55 /* ViewController.swift in Sources */,
 				859AF3F81BF8A3B100093B55 /* AppDelegate.swift in Sources */,
 			);
@@ -498,6 +558,7 @@
 				859AF41E1BF8A3B100093B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859AF41F1BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimatorTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +567,7 @@
 				859AF4211BF8A3B100093B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859AF4221BF8A3B100093B55 /* Build configuration list for PBXNativeTarget "OwlAnimatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +576,7 @@
 				859AF4241BF8A3B100093B55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
