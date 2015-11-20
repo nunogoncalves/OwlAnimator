@@ -149,7 +149,7 @@ class CircularAnimationController: UIViewController {
         let owlRect = CGRectInset(nestRectFromView, 20, 20)
         
         let iv = UIImageView(frame: owlRect)
-        iv.image = UIImage(named: "Owl1.png")
+        iv.image = UIImage(named: "Owl\(randomUpTo(22) + 1).png")
         nest.addSubview(iv)
         return iv
     }
@@ -162,6 +162,10 @@ class CircularAnimationController: UIViewController {
             line.removeFromSuperlayer()
         }
     }
+}
+
+func randomUpTo(value: Int) -> Int {
+    return Int(arc4random_uniform(UInt32(value)))
 }
 
 extension CGFloat {

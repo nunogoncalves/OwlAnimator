@@ -12,20 +12,6 @@ class OwlsController: UIViewController {
 
     @IBOutlet weak var owlsContainer: UIView!
     
-    var owls = [
-        "Owl1.png",
-        "Owl2.png",
-        "Owl3.jpeg",
-        "Owl4.jpg",
-        "Owl5.png",
-        "Owl6.png",
-        "Owl7.png",
-        "Owl8.jpg",
-        "Owl9.png",
-        "Owl10.png",
-        "Owl11.png"
-    ]
-    
     override func viewDidLoad() {
         let tap = UITapGestureRecognizer(target: self, action: "owlClicked")
         owlsContainer.addGestureRecognizer(tap)
@@ -95,7 +81,7 @@ class OwlsController: UIViewController {
 extension OwlsController : UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("OwlCell", forIndexPath: indexPath)
-        cell.imageView!.image = UIImage(named: owls[indexPath.row])!
+        cell.imageView!.image = UIImage(named: "Owl\(indexPath.row + 1).png")!
         return cell as UITableViewCell
     }
     
@@ -104,7 +90,7 @@ extension OwlsController : UITableViewDataSource {
         let owlImage = cell.imageView!
         
         let owlToMove = UIImageView(frame: CGRectOffset(owlImage.convertRect(owlImage.frame, fromView: cell), -cell.imageView!.frame.width / 2, -cell.imageView!.frame.height / 2))
-        owlToMove.image = UIImage(named: owls[indexPath.row])!
+        owlToMove.image = UIImage(named: "Owl\(indexPath.row + 1).png")!
         view.addSubview(owlToMove)
         
         view.layoutIfNeeded()
@@ -164,6 +150,6 @@ extension OwlsController : UITableViewDelegate {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return owls.count
+        return 24 //owls in project
     }
 }

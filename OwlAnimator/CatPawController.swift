@@ -53,28 +53,20 @@ class CatPawController: UIViewController {
         
         UIView.animateWithDuration(
             1.0,
-            delay: 0.1,
-            usingSpringWithDamping: CGFloat(self.damping),
-            initialSpringVelocity: CGFloat(self.initVel),
-            options: [],
+//            delay: 0.1,
+//            usingSpringWithDamping: CGFloat(self.damping),
+//            initialSpringVelocity: CGFloat(self.initVel),
+//            options: [],
             animations: {
                 newBornOwl.center = destinationPointFromCenter
             },
             completion: { _ in
                 let f = newBornOwl.convertRect(self.nest.frame, toView: self.nest)
                 
-//                let v = UIView(frame: f)
-//                v.convertPoint(v.center, toView: self.view)
-//                v.backgroundColor = UIColor.redColor()
-//                self.view.addSubview(v)
-//                p(newBornOwl.center)
-//                for (var i = 1; i < self.numberOfOwls; i++) {
                 var totalDelay = 0.0
                 for (var i = 0; i < self.numberOfOwls - 1; i++) {
-                    self.view.setNeedsLayout()
-                    self.view.layoutIfNeeded()
                     let iv = UIImageView(frame: CGRectMake(f.center.x, f.center.y, 60, 60))
-                    iv.image = UIImage(named: "Owl1.png")
+                    iv.image = UIImage(named: "Owl\(i+1).png")
                     self.view.addSubview(iv)
                     self.owlsAdded.append(iv)
                     
@@ -132,7 +124,7 @@ class CatPawController: UIViewController {
         let owlRect = CGRectInset(nestRectFromView, 20, 20)
         
         let iv = UIImageView(frame: owlRect)
-        iv.image = UIImage(named: "Owl1.png")
+        iv.image = UIImage(named: "Owl10.png")
         nest.addSubview(iv)
         return iv
     }
