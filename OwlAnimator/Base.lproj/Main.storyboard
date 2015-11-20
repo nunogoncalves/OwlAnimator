@@ -51,7 +51,7 @@
                                 <rect key="frame" x="109" y="40" width="103" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -203,14 +203,14 @@
                                                     <rect key="frame" x="15" y="34" width="31.5" height="19.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0X3-YD-ENn">
                                                     <rect key="frame" x="15" y="53.5" width="30.5" height="13.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="bwQ-ah-PpP">
@@ -349,7 +349,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Jz-7A-NwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1468" y="-51"/>
+            <point key="canvasLocation" x="1481" y="-229"/>
         </scene>
         <!--Owls-->
         <scene sceneID="T1k-7e-eNd">
@@ -378,7 +378,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -398,7 +398,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -418,13 +418,33 @@
                                                     <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="4VF-Ma-r8f" kind="show" id="fdZ-qa-OIk"/>
+                                            <segue destination="4VF-Ma-r8f" kind="show" id="NrX-ZY-drU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="v7h-B1-lAk" style="IBUITableViewCellStyleDefault" id="riI-g8-lvo">
+                                        <rect key="frame" x="0.0" y="216" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="riI-g8-lvo" id="1FM-pi-sJv">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Cat Paw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="v7h-B1-lAk">
+                                                    <rect key="frame" x="15" y="0.0" width="290" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="k4W-oN-He3" kind="show" id="DwR-TL-EK7"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -500,8 +520,8 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="eo2-nK-cMn"/>
                                                 <exclude reference="SFe-ra-tpQ"/>
+                                                <exclude reference="eo2-nK-cMn"/>
                                             </mask>
                                         </variation>
                                     </imageView>
@@ -530,8 +550,8 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="dL4-RQ-448"/>
                                                 <exclude reference="Dw1-iF-l0k"/>
+                                                <exclude reference="dL4-RQ-448"/>
                                             </mask>
                                         </variation>
                                     </imageView>
@@ -575,8 +595,8 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="yZb-4x-xsI"/>
                                                 <exclude reference="iSN-Lp-eKW"/>
+                                                <exclude reference="yZb-4x-xsI"/>
                                             </mask>
                                         </variation>
                                     </imageView>
@@ -590,8 +610,8 @@
                                         </constraints>
                                         <variation key="default">
                                             <mask key="constraints">
-                                                <exclude reference="Gc1-lc-r1s"/>
                                                 <exclude reference="5UR-X1-NWj"/>
+                                                <exclude reference="Gc1-lc-r1s"/>
                                             </mask>
                                         </variation>
                                     </imageView>
@@ -717,7 +737,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Owls" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFx-5O-j16">
                                         <rect key="frame" x="0.0" y="0.0" width="103" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8" minValue="1" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="X22-Yf-3Cf">
@@ -729,7 +749,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mcm-zL-BMa">
                                         <rect key="frame" x="218" y="0.0" width="103" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -777,7 +797,76 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aZ1-lG-h2K" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1454" y="565"/>
+            <point key="canvasLocation" x="1481" y="299"/>
+        </scene>
+        <!--Cat Paw-->
+        <scene sceneID="3Bg-pP-Xxe">
+            <objects>
+                <viewController id="k4W-oN-He3" customClass="CatPawController" customModule="OwlAnimator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7NX-dC-Lyw"/>
+                        <viewControllerLayoutGuide type="bottom" id="Paw-3R-HVd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sJ7-O9-fBy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="997-3a-n4n">
+                                <rect key="frame" x="110" y="190" width="100" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Owl1.png" translatesAutoresizingMaskIntoConstraints="NO" id="yUT-F2-gsJ">
+                                        <rect key="frame" x="20" y="20" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="3dg-ux-Brn"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="Jol-0u-kGi"/>
+                                            <constraint firstAttribute="height" constant="60" id="gh0-yN-erD"/>
+                                            <constraint firstAttribute="width" constant="60" id="sV0-NT-ien"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3dg-ux-Brn"/>
+                                                <exclude reference="Jol-0u-kGi"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.18823529410000001" green="0.71372549019999998" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="yUT-F2-gsJ" firstAttribute="centerY" secondItem="997-3a-n4n" secondAttribute="centerY" id="23A-QB-7lr"/>
+                                    <constraint firstAttribute="width" constant="100" id="2Lv-Ki-xUO"/>
+                                    <constraint firstAttribute="height" constant="100" id="9Se-tX-G9F"/>
+                                    <constraint firstItem="yUT-F2-gsJ" firstAttribute="centerX" secondItem="997-3a-n4n" secondAttribute="centerX" id="HNk-wJ-GS8"/>
+                                    <constraint firstItem="yUT-F2-gsJ" firstAttribute="centerY" secondItem="997-3a-n4n" secondAttribute="centerY" id="tKi-zT-Ks8"/>
+                                    <constraint firstItem="yUT-F2-gsJ" firstAttribute="centerX" secondItem="997-3a-n4n" secondAttribute="centerX" id="yNm-Ov-1CZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tKi-zT-Ks8"/>
+                                        <exclude reference="yNm-Ov-1CZ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="997-3a-n4n" firstAttribute="centerY" secondItem="sJ7-O9-fBy" secondAttribute="centerY" id="Es9-OB-bNN"/>
+                            <constraint firstItem="997-3a-n4n" firstAttribute="centerX" secondItem="sJ7-O9-fBy" secondAttribute="centerX" id="qUQ-I3-Fb3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cat Paw" id="NgB-YK-een"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="nest" destination="997-3a-n4n" id="qNH-gL-And"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dim-gp-LyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1481" y="854"/>
         </scene>
     </scenes>
     <resources>
