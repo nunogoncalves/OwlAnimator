@@ -44,6 +44,7 @@
 		859AF42C1BF8AD3900093B55 /* owl_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */; };
 		85E9E7EF1BFE84EA008ADC08 /* CatPawController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9E7EE1BFE84EA008ADC08 /* CatPawController.swift */; };
 		85EAEE1A1BF9D24100723DED /* OwlsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85EAEE191BF9D24100723DED /* OwlsController.swift */; };
+		85F5E2A31C06FF05007D6747 /* TableFooterAnimatorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F5E2A21C06FF05007D6747 /* TableFooterAnimatorController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = owl_sound.mp3; sourceTree = "<group>"; };
 		85E9E7EE1BFE84EA008ADC08 /* CatPawController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatPawController.swift; sourceTree = "<group>"; };
 		85EAEE191BF9D24100723DED /* OwlsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwlsController.swift; sourceTree = "<group>"; };
+		85F5E2A21C06FF05007D6747 /* TableFooterAnimatorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableFooterAnimatorController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				859AF4031BF8A3B100093B55 /* Info.plist */,
 				850777811BFE230A00087983 /* CircularAnimationController.swift */,
 				85E9E7EE1BFE84EA008ADC08 /* CatPawController.swift */,
+				85F5E2A21C06FF05007D6747 /* TableFooterAnimatorController.swift */,
 			);
 			path = OwlAnimator;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				85EAEE1A1BF9D24100723DED /* OwlsController.swift in Sources */,
 				85E9E7EF1BFE84EA008ADC08 /* CatPawController.swift in Sources */,
 				859AF4281BF8A64300093B55 /* BigOwlController.swift in Sources */,
+				85F5E2A31C06FF05007D6747 /* TableFooterAnimatorController.swift in Sources */,
 				850777821BFE230A00087983 /* CircularAnimationController.swift in Sources */,
 				859AF3FA1BF8A3B100093B55 /* ViewController.swift in Sources */,
 				859AF3F81BF8A3B100093B55 /* AppDelegate.swift in Sources */,
