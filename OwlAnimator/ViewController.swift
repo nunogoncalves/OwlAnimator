@@ -17,7 +17,6 @@ class ViewController: UIViewController, FinishedProtocol {
     @IBOutlet weak var owlContainer: UIView!
     @IBOutlet weak var owlImage: UIImageView!
     
-    let owlPath = UIBezierPath()
     let pathLayer = CAShapeLayer()
     
     override func viewDidLoad() {
@@ -26,13 +25,13 @@ class ViewController: UIViewController, FinishedProtocol {
         view.setNeedsLayout()
         view.layoutIfNeeded()
         
-        addCartPath()
         addTapToOwl()
     }
     
-    private func addCartPath() {
+    private func owlPath() -> UIBezierPath {
+        let owlPath = UIBezierPath()
         owlPath.moveToPoint(owlContainer.center)
-        owlPath.addQuadCurveToPoint(view.center, controlPoint: P(owlContainer.center.x - 150, owlContainer.center.y))
+        owlPath.addQuadCurveToPoint(view.center, controlPoint: P(view.center.x, owlContainer.center.y))
 
 //        pathLayer.strokeColor = UIColor.blueColor().CGColor
 //        pathLayer.lineWidth = 1
@@ -40,8 +39,11 @@ class ViewController: UIViewController, FinishedProtocol {
         pathLayer.borderColor = UIColor.blueColor().CGColor
         pathLayer.fillColor = UIColor.clearColor().CGColor
         
+        pathLayer.removeFromSuperlayer()
         pathLayer.path = owlPath.CGPath
         view.layer.addSublayer(pathLayer)
+        
+        return owlPath
     }
     
     private func addTapToOwl() {
@@ -50,7 +52,7 @@ class ViewController: UIViewController, FinishedProtocol {
     }
     
     func owlClicked() {
-        moveOwl(owlPath, onFinished: {
+        moveOwl(owlPath(), onFinished: {
             let center = self.view.center
             self.owlImage.frame = CGRectMake(center.x, center.y, self.owlImage.frame.width, self.owlImage.frame.height)
             self.view.layoutIfNeeded()
@@ -77,9 +79,15 @@ class ViewController: UIViewController, FinishedProtocol {
     }
     
     private func expandOwl() {
+        let vheight = view.frame.height + owlContainer.layer.cornerRadius
+        let owlHeight = owlContainer.frame.height
+        
+        let relation = vheight / owlHeight
+        
         UIView.animateWithDuration(0.5, animations: {
-            self.owlContainer.transform = CGAffineTransformMakeScale(10, 10)
-            self.owlImage.transform = CGAffineTransformMakeScale(3.334, 3.334)
+            
+            self.owlContainer.transform = CGAffineTransformMakeScale(relation, relation)
+            self.owlImage.transform = CGAffineTransformMakeScale(2, 2)
             }) { _ in
                 let nextVC = self.storyboard?.instantiateViewControllerWithIdentifier("BigOwlController") as! BigOwlController
                 nextVC.finshedDelegate = self
@@ -92,9 +100,9 @@ class ViewController: UIViewController, FinishedProtocol {
             self.owlContainer.transform = CGAffineTransformMakeScale(1, 1)
             self.owlImage.transform = CGAffineTransformMakeScale(1, 1)
             }) { _ in
-                let reversePath = self.owlPath.bezierPathByReversingPath()
+                let reversePath = self.owlPath().bezierPathByReversingPath()
                 self.moveOwl(reversePath) {
-                    
+                    self.owlImage.updateConstraints()
                 }
         }
     }
