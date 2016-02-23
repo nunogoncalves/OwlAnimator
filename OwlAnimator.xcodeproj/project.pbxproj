@@ -136,6 +136,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8552D1DC1C7C603C0063DE52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8552D1DE1C7C60500063DE52 /* Sounds */,
+				8552D1DD1C7C60450063DE52 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8552D1DD1C7C60450063DE52 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				859AF3FE1BF8A3B100093B55 /* Assets.xcassets */,
+				859AF4291BF8AB7F00093B55 /* branch.png */,
+				85EAEE181BF9D1C200723DED /* OwlImages */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		8552D1DE1C7C60500063DE52 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		8552D1DF1C7C60670063DE52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				859AF3F71BF8A3B100093B55 /* AppDelegate.swift */,
+				859AF4031BF8A3B100093B55 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8552D1E01C7C608D0063DE52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				859AF4271BF8A64300093B55 /* BigOwlController.swift */,
+				85E9E7EE1BFE84EA008ADC08 /* CatPawController.swift */,
+				850777811BFE230A00087983 /* CircularAnimationController.swift */,
+				85EAEE191BF9D24100723DED /* OwlsController.swift */,
+				85F5E2A21C06FF05007D6747 /* TableFooterAnimatorController.swift */,
+				859AF3F91BF8A3B100093B55 /* ViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8552D1E11C7C60AE0063DE52 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				859AF3FB1BF8A3B100093B55 /* Main.storyboard */,
+				859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */,
+			);
+			name = NIBs;
+			sourceTree = "<group>";
+		};
 		859AF3EB1BF8A3B100093B55 = {
 			isa = PBXGroup;
 			children = (
@@ -159,20 +217,10 @@
 		859AF3F61BF8A3B100093B55 /* OwlAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				85EAEE181BF9D1C200723DED /* OwlImages */,
-				859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */,
-				859AF4291BF8AB7F00093B55 /* branch.png */,
-				859AF3F71BF8A3B100093B55 /* AppDelegate.swift */,
-				859AF4271BF8A64300093B55 /* BigOwlController.swift */,
-				85EAEE191BF9D24100723DED /* OwlsController.swift */,
-				859AF3F91BF8A3B100093B55 /* ViewController.swift */,
-				859AF3FB1BF8A3B100093B55 /* Main.storyboard */,
-				859AF3FE1BF8A3B100093B55 /* Assets.xcassets */,
-				859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */,
-				859AF4031BF8A3B100093B55 /* Info.plist */,
-				850777811BFE230A00087983 /* CircularAnimationController.swift */,
-				85E9E7EE1BFE84EA008ADC08 /* CatPawController.swift */,
-				85F5E2A21C06FF05007D6747 /* TableFooterAnimatorController.swift */,
+				8552D1E01C7C608D0063DE52 /* Controllers */,
+				8552D1E11C7C60AE0063DE52 /* NIBs */,
+				8552D1DC1C7C603C0063DE52 /* Resources */,
+				8552D1DF1C7C60670063DE52 /* Supporting Files */,
 			);
 			path = OwlAnimator;
 			sourceTree = "<group>";

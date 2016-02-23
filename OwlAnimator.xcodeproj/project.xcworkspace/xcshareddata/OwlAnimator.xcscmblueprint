@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A14D9BAE3461C8520D20C6B0D7FB1C532F0A1394",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A14D9BAE3461C8520D20C6B0D7FB1C532F0A1394" : 0,
+    "A491FEC3504CACA8A367681F1E66F589840DE7DF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "50872C79-DCC4-4B6E-B354-33DF698B0E9E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A14D9BAE3461C8520D20C6B0D7FB1C532F0A1394" : "OwlAnimator",
+    "A491FEC3504CACA8A367681F1E66F589840DE7DF" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OwlAnimator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OwlAnimator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nunogoncalves\/OwlAnimator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A14D9BAE3461C8520D20C6B0D7FB1C532F0A1394"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/nunogoncalves\/iOS-GitHubAwards.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A491FEC3504CACA8A367681F1E66F589840DE7DF"
+    }
+  ]
+}
