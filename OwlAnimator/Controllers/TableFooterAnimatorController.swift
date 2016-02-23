@@ -85,7 +85,6 @@ class TableFooterAnimatorController: UIViewController {
         return P(self.ball.center.x - self.radius, self.ball.center.y - 49)
     }()
     
-    
     private func arc(startAngle startAngle: CGFloat, endAngle: CGFloat, clockwise: Bool) -> UIBezierPath {
         return UIBezierPath(arcCenter: center, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: clockwise)
     }
@@ -135,8 +134,8 @@ extension TableFooterAnimatorController : UITableViewDelegate {
     }
     
     private func moveBallDown() {
-        animate(inPath: circleDown, duration: 0.5)
-        UIView.animateWithDuration(0.5) { [weak self] in
+        animate(inPath: circleDown, duration: 0.3)
+        UIView.animateWithDuration(0.3) { [weak self] in
             self?.footer.alpha = 1.0
             self?.ball.alpha = 0.0
             self?.ball.transform = CGAffineTransformMakeScale(0.2, 0.2)
@@ -144,7 +143,7 @@ extension TableFooterAnimatorController : UITableViewDelegate {
     }
     
     private func moveBallUp() {
-        let firstDuration: NSTimeInterval = 0.3
+        let firstDuration: NSTimeInterval = 0.2
         let secondDuration: NSTimeInterval = 0.1
         animate(inPath: circleUp1, duration: firstDuration)
         animateUpStep2(secondDuration, delay: firstDuration)

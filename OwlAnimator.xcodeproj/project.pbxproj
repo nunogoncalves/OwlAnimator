@@ -136,6 +136,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8552D1DC1C7C603C0063DE52 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8552D1DD1C7C60450063DE52 /* Images */,
+				8552D1DE1C7C60500063DE52 /* Sounds */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8552D1DD1C7C60450063DE52 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				85EAEE181BF9D1C200723DED /* OwlImages */,
+				859AF3FE1BF8A3B100093B55 /* Assets.xcassets */,
+				859AF4291BF8AB7F00093B55 /* branch.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		8552D1DE1C7C60500063DE52 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		8552D1DF1C7C60670063DE52 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				859AF3F71BF8A3B100093B55 /* AppDelegate.swift */,
+				859AF4031BF8A3B100093B55 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8552D1E01C7C608D0063DE52 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				859AF4271BF8A64300093B55 /* BigOwlController.swift */,
+				85E9E7EE1BFE84EA008ADC08 /* CatPawController.swift */,
+				850777811BFE230A00087983 /* CircularAnimationController.swift */,
+				85EAEE191BF9D24100723DED /* OwlsController.swift */,
+				85F5E2A21C06FF05007D6747 /* TableFooterAnimatorController.swift */,
+				859AF3F91BF8A3B100093B55 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8552D1E11C7C60AE0063DE52 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */,
+				859AF3FB1BF8A3B100093B55 /* Main.storyboard */,
+			);
+			path = NIBs;
+			sourceTree = "<group>";
+		};
 		859AF3EB1BF8A3B100093B55 = {
 			isa = PBXGroup;
 			children = (
@@ -159,20 +217,10 @@
 		859AF3F61BF8A3B100093B55 /* OwlAnimator */ = {
 			isa = PBXGroup;
 			children = (
-				85EAEE181BF9D1C200723DED /* OwlImages */,
-				859AF42B1BF8AD3900093B55 /* owl_sound.mp3 */,
-				859AF4291BF8AB7F00093B55 /* branch.png */,
-				859AF3F71BF8A3B100093B55 /* AppDelegate.swift */,
-				859AF4271BF8A64300093B55 /* BigOwlController.swift */,
-				85EAEE191BF9D24100723DED /* OwlsController.swift */,
-				859AF3F91BF8A3B100093B55 /* ViewController.swift */,
-				859AF3FB1BF8A3B100093B55 /* Main.storyboard */,
-				859AF3FE1BF8A3B100093B55 /* Assets.xcassets */,
-				859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */,
-				859AF4031BF8A3B100093B55 /* Info.plist */,
-				850777811BFE230A00087983 /* CircularAnimationController.swift */,
-				85E9E7EE1BFE84EA008ADC08 /* CatPawController.swift */,
-				85F5E2A21C06FF05007D6747 /* TableFooterAnimatorController.swift */,
+				8552D1E01C7C608D0063DE52 /* Controllers */,
+				8552D1E11C7C60AE0063DE52 /* NIBs */,
+				8552D1DC1C7C603C0063DE52 /* Resources */,
+				8552D1DF1C7C60670063DE52 /* Supporting Files */,
 			);
 			path = OwlAnimator;
 			sourceTree = "<group>";
@@ -180,8 +228,8 @@
 		859AF40B1BF8A3B100093B55 /* OwlAnimatorTests */ = {
 			isa = PBXGroup;
 			children = (
-				859AF40C1BF8A3B100093B55 /* OwlAnimatorTests.swift */,
 				859AF40E1BF8A3B100093B55 /* Info.plist */,
+				859AF40C1BF8A3B100093B55 /* OwlAnimatorTests.swift */,
 			);
 			path = OwlAnimatorTests;
 			sourceTree = "<group>";
@@ -189,8 +237,8 @@
 		859AF4161BF8A3B100093B55 /* OwlAnimatorUITests */ = {
 			isa = PBXGroup;
 			children = (
-				859AF4171BF8A3B100093B55 /* OwlAnimatorUITests.swift */,
 				859AF4191BF8A3B100093B55 /* Info.plist */,
+				859AF4171BF8A3B100093B55 /* OwlAnimatorUITests.swift */,
 			);
 			path = OwlAnimatorUITests;
 			sourceTree = "<group>";
@@ -199,14 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				8510CAC01BFF8C0D001FACEE /* Owl1.png */,
-				8510CAC11BFF8C0D001FACEE /* Owl2.png */,
-				8510CAC21BFF8C0D001FACEE /* Owl3.png */,
-				8510CAC31BFF8C0D001FACEE /* Owl4.png */,
-				8510CAC41BFF8C0D001FACEE /* Owl5.png */,
-				8510CAC51BFF8C0D001FACEE /* Owl6.png */,
-				8510CAC61BFF8C0D001FACEE /* Owl7.png */,
-				8510CAC71BFF8C0D001FACEE /* Owl8.png */,
-				8510CAC81BFF8C0D001FACEE /* Owl9.png */,
 				8510CAC91BFF8C0D001FACEE /* Owl10.png */,
 				8510CACA1BFF8C0D001FACEE /* Owl11.png */,
 				8510CACB1BFF8C0D001FACEE /* Owl12.png */,
@@ -217,13 +257,21 @@
 				8510CAD01BFF8C0D001FACEE /* Owl17.png */,
 				8510CAD11BFF8C0D001FACEE /* Owl18.png */,
 				8510CAD21BFF8C0D001FACEE /* Owl19.png */,
+				8510CAC11BFF8C0D001FACEE /* Owl2.png */,
 				8510CAD31BFF8C0D001FACEE /* Owl20.png */,
 				8510CAD41BFF8C0D001FACEE /* Owl21.png */,
 				8510CAD51BFF8C0D001FACEE /* Owl22.png */,
 				8510CAD61BFF8C0D001FACEE /* Owl23.png */,
 				8510CAD71BFF8C0D001FACEE /* Owl24.png */,
+				8510CAC21BFF8C0D001FACEE /* Owl3.png */,
+				8510CAC31BFF8C0D001FACEE /* Owl4.png */,
+				8510CAC41BFF8C0D001FACEE /* Owl5.png */,
+				8510CAC51BFF8C0D001FACEE /* Owl6.png */,
+				8510CAC61BFF8C0D001FACEE /* Owl7.png */,
+				8510CAC71BFF8C0D001FACEE /* Owl8.png */,
+				8510CAC81BFF8C0D001FACEE /* Owl9.png */,
 			);
-			name = OwlImages;
+			path = OwlImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +479,7 @@
 				859AF3FC1BF8A3B100093B55 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		859AF4001BF8A3B100093B55 /* LaunchScreen.storyboard */ = {
@@ -439,6 +488,7 @@
 				859AF4011BF8A3B100093B55 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -529,7 +579,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OwlAnimator/Info.plist;
+				INFOPLIST_FILE = "OwlAnimator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.numicago.ios.OwlAnimator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -540,7 +590,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = OwlAnimator/Info.plist;
+				INFOPLIST_FILE = "OwlAnimator/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.numicago.ios.OwlAnimator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
