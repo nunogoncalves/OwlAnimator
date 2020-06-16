@@ -6,4 +6,5 @@ Some nice looking animation efects.
 - Adding an item to a cart
 - Table Reaching Footer Animation
 
-<img src="https://dl.dropboxusercontent.com/u/2001692/imagesshelf/OwlAnimator/OwlsAnimations.gif" width="200px"> 
+
+<img src="https://user-images.githubusercontent.com/3007012/84833689-c5627a80-b027-11ea-8d50-e31e1645c181.gif" width="400px"> 
